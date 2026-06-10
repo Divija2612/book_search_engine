@@ -163,10 +163,14 @@ GET http://127.0.0.1:5000/search?q=harry+potter
 ## 📂 Project Structure
 
 ```
-book-search-engine/
+book_search_engine/
 │
 ├── app.py              # Flask API — all search and autocomplete endpoints
 ├── load_books.py       # Data pipeline — reads CSV and indexes into Elasticsearch
+├── checkcsv.py       # Checks and prints the data present inside Books.csv
+│
+├── autocomplete.jpg        # Autocomplete ui display
+├── search_results.jpg      # Search results ui display
 │
 ├── index.html          # Frontend UI — search bar, suggestions, result cards
 ├── style.css           # Responsive styles with CSS flexbox
@@ -175,8 +179,8 @@ book-search-engine/
 ├── data/
 │   └── Books.csv       # Dataset (download separately — see below)
 │
-├── .env                # Your credentials — NEVER commit this file
-├── .env.example        # Safe template — commit this instead]
+├── .env                # Your credentials 
+├── .env.example        # Safe template 
 ```
 
 ---
